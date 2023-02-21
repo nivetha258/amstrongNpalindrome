@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js</title>
+</head>
+<body>
+
+	<script>
+// amsstrongNumber in function
+
+function amsstrongNumber(a){
+	let num = a;
+	let n=0;
+	let total = 0;
+	while(num > 0){
+		let r= num %10;
+		num = (num -r) /10;
+			n++
+	}
+	num = a;
+	while(num > 0){
+		let r = num%10;
+		num = (num-r)/10;
+		total += r**n
+	}
+	if(total == a){
+		console.log("this is amsstrong Number")
+	}
+	else{
+		console.log("this is not a amsstrong Number")
+	}
+}
+amsstrongNumber(14);
+
+
+//palindrome
+let num1 = 1221;
+let num2 = num1;
+let result = 0;
+while(num2 > 0){
+	r = num2 % 10;
+	num2 = (num2 - r )/10;
+	result = (result * 10) + r;
+}
+if(num1 == result){
+	console.log("The given number is palindrome")
+}
+else{
+	console.log("The given number is not a palindrome")
+}
+	</script>
+			
+</body>
+
+</html>
